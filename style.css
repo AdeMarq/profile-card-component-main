@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: grid;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-bg {
+    position: absolute;
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:978px ;
+    width: 978px;
+    top: -525px;
+    left: -280px ;
+}
+.bottom-bg {
+    position: absolute;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 978px ;
+    width: 978px;
+    bottom: -570px;
+    right: -280px ;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    position: relative;
+    z-index: 99;
+    height: 490px;
+}
+.card .card-bg img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 450px;
+}
+
+.profile .avatar img {
+    transform: translateY(-80px);
+    border: 9px solid white;
+    border-radius: 50%;
+    height: 150px;
+}
+.profile .profile-info {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-55px);
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+.profile .profile-info h2 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.profile .profile-info span {
+    font-weight: 400;
+    margin-left: 0.8rem;
+    color:  hsl(0, 0%, 59%);
+}
+.profile .profile-info p {
+    color:  hsl(0, 0%, 59%);
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    transform: translateY(-40px);
+    justify-content: space-evenly;
+}
+.stats h2 {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.stats p {
+    color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media (max-width:650px) {
+    
+    .top-bg {
+        top: -525px;
+        left: -580px ;
+    }
+    .bottom-bg{
+        bottom: -470px;
+        right: -650px ;
+    }
+}
+
